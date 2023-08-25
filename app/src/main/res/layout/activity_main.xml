@@ -7,64 +7,64 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_view_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        tools:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_rock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="32dp"
-        android:text="Button"
+        android:text="Pedra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_paper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="38dp"
         android:layout_marginStart="37dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        android:text="Papel"
+        app:layout_constraintBottom_toBottomOf="@+id/button_rock"
+        app:layout_constraintEnd_toStartOf="@+id/button_scissor"
+        app:layout_constraintStart_toEndOf="@+id/button_rock" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_scissor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        android:text="Tesoura"
+        app:layout_constraintBottom_toBottomOf="@+id/button_paper"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_view_player"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ic_paper" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_message"
+        tools:srcCompat="@drawable/ic_paper" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/image_view_player2"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginBottom="32dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:srcCompat="@drawable/ic_paper" />
+        app:layout_constraintBottom_toTopOf="@+id/text_view_message"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_player"
+        app:layout_constraintStart_toStartOf="@+id/image_view_player"
+        tools:srcCompat="@drawable/ic_paper" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
